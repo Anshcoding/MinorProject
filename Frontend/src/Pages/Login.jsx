@@ -23,7 +23,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("https://webminds-2-1.onrender.com/api/auth/login", {
+      const response = await fetch("https://minorproject-u04v.onrender.com/api/auth/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

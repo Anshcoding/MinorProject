@@ -85,7 +85,7 @@ function LineChart() {
     const getTransactions = async () => {
       try {
         const response = await fetch(
-          "https://webminds-2-1.onrender.com/api/payments/transactions",
+          "https://minorproject-u04v.onrender.com/api/payments/transactions",
           {
             method: "GET",
             headers: {

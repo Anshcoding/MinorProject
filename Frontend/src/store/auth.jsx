@@ -22,7 +22,7 @@ export const AuthProvider=({children})=>{
     const userAuth=async()=>{
         try{
             setIsLoading(true);
-            const response=await fetch("https://webminds-2-1.onrender.com/api/auth/user",{
+            const response=await fetch("https://minorproject-u04v.onrender.com/api/auth/user",{
                 method:"GET",
                 headers:{
                     Authorization:authToken

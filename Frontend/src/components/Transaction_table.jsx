@@ -29,7 +29,7 @@ const Transaction_table = () => {
   const getTransactions = async () => {
     setIsLoading(true)
     try {
-      const response = await fetch("https://webminds-2-1.onrender.com/api/payments/transactions", {
+      const response = await fetch("https://minorproject-u04v.onrender.com/api/payments/transactions", {
         method: "GET",
         headers: {
           "Authorization": authToken

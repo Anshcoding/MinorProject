@@ -17,7 +17,7 @@ const SideBar = () => {
 
   const getDetails=async ()=>{
     try{
-      const response=await fetch("https://webminds-2-1.onrender.com/api/auth/user",{
+      const response=await fetch("https://minorproject-u04v.onrender.com/api/auth/user",{
         method:"GET",
         headers: {
           Authorization: authToken,
@@ -26,7 +26,7 @@ const SideBar = () => {
       if(response.ok){
         const data=await response.json()
         setUsername(data.user.username);
-        const newRes=await fetch(`https://webminds-2-1.onrender.com/api/account/bank/${data.user.banks[0]._id}`,{
+        const newRes=await fetch(`https://minorproject-u04v.onrender.com/api/account/bank/${data.user.banks[0]._id}`,{
           method:"GET",
           headers: {
             Authorization: authToken,

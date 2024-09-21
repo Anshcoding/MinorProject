@@ -26,7 +26,7 @@ const AddAccount = () => {
     e.preventDefault();
     setIsLoading(true);
     try {
-      const response = await fetch("https://webminds-2-1.onrender.com/api/account/addBank", {
+      const response = await fetch("https://minorproject-u04v.onrender.com/api/account/addBank", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
